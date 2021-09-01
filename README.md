@@ -1,6 +1,7 @@
-## Queue Compressor Bot (For Single Users)
+## Queue FFMPEG Compressor Bot (For Single Users) [Beta] 
+## With Support For libfdk-aac
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2F1Danish-00%2FCompressorQueue&template=https%3A%2F%2Fgithub.com%2F1Danish-00%2FCompressorQueue)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rick-and-Roll/CompressorQueue/tree/beta)
 
 ### Variables
 `APP_ID` `API_HASH` `BOT_TOKEN`
@@ -11,4 +12,4 @@
 
 `FFMPEG` : Put Your FFMPEG Code with "{}" as input and output. (Eg. `ffmpeg -i "{}" -preset veryfast -vcodec libx265 -crf 27 "{}"`)
 
-- [Main Source](https://github.com/1Danish-00/CompressorBot)
+- [Thanks](https://github.com/1Danish-00/CompressorBot)
