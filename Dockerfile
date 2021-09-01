@@ -2,7 +2,8 @@ FROM python:3.9.2-slim-buster
 RUN mkdir /bot && chmod 777 /bot
 WORKDIR /bot
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt -qq update && apt -qq install -y git wget pv jq python3-dev mediainfo
+RUN apt -qq update && apt -qq install -y git wget pv jq python3-dev mediainfo   && \
+apt-get install -y libavresample-dev
 # Install Dependency
 RUN apt-get install -y libdc1394-22-dev
 # Change repo 
@@ -18,8 +19,7 @@ RUN apt-get -y install build-essential autoconf automake cmake libtool git check
 RUN apt-get install libaom-dev -y
 RUN apt-get install build-essential curl tar libass-dev libtheora-dev libvorbis-dev libtool cmake automake autoconf -y && \
 apt-get update  && \
-apt-get install libdrm-dev -y  && \
-apt-get install -y libavresample-dev
+apt-get install libdrm-dev -y
 RUN wget https://ffmpeg.org/releases/ffmpeg-4.2.1.tar.bz2  && \
 tar -xf ffmpeg-4.2.1.tar.bz2  && \
 rm ffmpeg-4.2.1.tar.bz2  && \
