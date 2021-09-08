@@ -26,4 +26,4 @@
 - [1Danish-00](https://github.com/1Danish-00) For Compressor Bot
 
 
-*Source : * [Main Source](https://github.com/Dragonpower84/CompressorBot)
+<b>Source : </b>[Main Source](https://github.com/Dragonpower84/CompressorBot)
