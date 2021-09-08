@@ -1,6 +1,26 @@
-## Queue Compressor Bot (For Single Users)
+## Simple Bot with queue work 
+Only for single users [u can modify it for many users but queue wont work ]
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2F1Danish-00%2FCompressorQueue&template=https%3A%2F%2Fgithub.com%2F1Danish-00%2FCompressorQueue)
+## ffmpeg compiled with libfdk_aac 
+
+This repo can be deployed on heroku by connecting github to heroku and cloning or fork this repo 
+This repo is compiled with libfdk_aac, and thanks to me and my friend  to do this 
+If u want to compile libfdk_aac in ur repo just copy paste my dockerfile there 
+[Note: This repo needs atleast 25 mins to build and 5 to 7 mins to deploy ]
+## Deploy on Railway 
+Railway.app 👈
+
+1)I suggest u to clone Or Just Fork this repo
+
+2)Then go to <a href="railway.app" target="_blank">Railways</a>
+
+3)Then make fake cc (If Don't Know Ask ,<a href="https://telegram.dog/Kai_8_4">@Kai_8_4</a> and buy developer pack (as starter pack isnt copacetic for encoding)
+
+4)Then click variable and add this
+
+## Deploy With Heroku (It Will Take 25min)
+
+<p><a href="https://heroku.com/deploy"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-green?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
 ### Variables
 `APP_ID` : Get Your APP_ID From my.telegram.org or [@TeleORG_Bot](https://telegram.dog/TeleORG_Bot).
@@ -21,7 +41,7 @@
 
 - [Kai84](https://telegram.dog/Kai_8_4) For Merging and Deployable To Heroku
 
-- [Rick-and-Roll](tg://user?id=1604378785) For Making `libfdk-aac` In Compress Queue
+- [Rick-and-Roll](https://telegram.dog/Just_REV3RSE) For Making `libfdk-aac` In Compress Queue
 
 - [1Danish-00](https://github.com/1Danish-00) For Compressor Bot
 
