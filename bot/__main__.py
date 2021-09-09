@@ -101,7 +101,7 @@ async def something():
         try:
             if not WORKING and QUEUE:
                 user = int(OWNER.split()[0])
-                e = await bot.send_message(user, "Downloding Queue Files")
+                e = await bot.send_message(user, "𝐷𝑜𝑤𝑛𝑙𝑜𝑑𝑖𝑛𝑔📥 𝑄𝑢𝑒𝑢𝑒 𝐹𝑖𝑙𝑒𝑠📂")
                 dl, file = QUEUE[list(QUEUE.keys())[0]]
                 s = dt.now()
                 tt = time.time()
@@ -117,7 +117,7 @@ async def something():
                                 t,
                                 e,
                                 tt,
-                                "Downloading",
+                                "𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕𝕚𝕟𝕘📥 𝕥𝕠 𝕄𝕪 𝕊𝕖𝕣𝕧𝕖𝕣🖥️",
                             )
                         ),
                     )
@@ -132,10 +132,10 @@ async def something():
                 hehe = f"{out};{dl};{list(QUEUE.keys())[0]}"
                 wah = code(hehe)
                 nn = await e.edit(
-                    "`Compressing..`",
+                    "**Pʀᴏᴄᴇssʜɴɢ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ**\nClick Below👇 To Know The Progress.",
                     buttons=[
-                        [Button.inline("STATS", data=f"stats{wah}")],
-                        [Button.inline("CANCEL PROCESS", data=f"skip{wah}")],
+                        [Button.inline("𝚂𝚝𝚊𝚝𝚜 📊", data=f"stats{wah}")],
+                        [Button.inline("𝙲𝚊𝚗𝚌𝚎𝚕 🛑", data=f"skip{wah}")],
                     ],
                 )
                 cmd = FFMPEG.format(dl, out)
@@ -146,7 +146,7 @@ async def something():
                 er = stderr.decode()
                 try:
                     if er:
-                        await e.edit(str(er) + "\n\n**ERROR** Contact @danish_00")
+                        await e.edit(str(er) + "\n\n**ERROR** Contact @Kai_8_4")
                         QUEUE.pop(list(QUEUE.keys())[0])
                         os.remove(dl)
                         os.remove(out)
@@ -181,7 +181,7 @@ async def something():
                 a1 = await info(dl, e)
                 a2 = await info(out, e)
                 dk = await ds.reply(
-                    f"Original Size : {hbs(org)}\nCompressed Size : {hbs(com)}\nCompressed Percentage : {per}\n\nMediainfo: [Before]({a1})//[After]({a2})\n\nDownloaded in {x}\nCompressed in {xx}\nUploaded in {xxx}",
+                    f"**💿Original Size : **{hbs(org)}\n**📀Compressed Size : **{hbs(com)}\n**Compressed Percentage : **{per}\n\nMediainfo: [Ⓑ]({a1})//[Ⓐ]({a2})\n\n**Downloaded📥 in {x}\nCompressed in {xx}\nUploaded in {xxx}",
                     link_preview=False,
                 )
                 QUEUE.pop(list(QUEUE.keys())[0])
