@@ -25,7 +25,7 @@ async def stats(e):
         out, dl, id = wh.split(";")
         ot = hbs(int(Path(out).stat().st_size))
         ov = hbs(int(Path(dl).stat().st_size))
-        ans = f"Downloaded:\n{ov}\n\nCompressing:\n{ot}"
+        ans = f"Downloaded:-\n<b>☞ {ov}</b>\n\nCompressing:-\n<b>☞ {ot}</b>"
         await e.answer(ans, cache_time=0, alert=True)
     except Exception as er:
         LOGS.info(er)
@@ -109,7 +109,7 @@ async def encod(event):
         kk = dl.split("/")[-1]
         aa = kk.split(".")[-1]
         rr = f"encode"
-        bb = kk.replace(f".{aa}", " compressed.mkv")
+        bb = kk.replace(f".{aa}", " [@Animes_Encoded].mkv")
         out = f"{rr}/{bb}"
         thum = "thumb.jpg"
         dtime = ts(int((es - s).seconds) * 1000)
@@ -117,10 +117,10 @@ async def encod(event):
         hehe = f"{out};{dl};0"
         wah = code(hehe)
         nn = await e.edit(
-            "`Compressing..`",
+            "**Pʀᴏᴄᴇssɪɴɢ♻️ Yᴏᴜʀ Rᴇϙᴜᴇsᴛ**",
             buttons=[
-                [Button.inline("STATS", data=f"stats{wah}")],
-                [Button.inline("CANCEL PROCESS", data=f"skip{wah}")],
+                [Button.inline("Sᴛᴀᴛᴜs 📊", data=f"stats{wah}")],
+                [Button.inline("Cᴀɴᴄᴇʟ 🗑️", data=f"skip{wah}")],
             ],
         )
         cmd = FFMPEG.format(dl, out)
@@ -131,7 +131,7 @@ async def encod(event):
         er = stderr.decode()
         try:
             if er:
-                await e.edit(str(er) + "\n\n**ERROR** Contact @danish_00")
+                await e.edit(str(er) + "\n**ERROR** \nContact : @Kai_8_4 for Fast Response\nOwner : @DaNish_00")
                 WORKING.clear()
                 os.remove(dl)
                 return os.remove(out)
@@ -164,8 +164,11 @@ async def encod(event):
         xxx = ts(int((eees - ees).seconds) * 1000)
         a1 = await info(dl, e)
         a2 = await info(out, e)
-        dk = await ds.reply(
-            f"Original Size : {hbs(org)}\nCompressed Size : {hbs(com)}\nCompressed Percentage : {per}\n\nMediainfo: [Before]({a1})//[After]({a2})\n\nDownloaded in {x}\nCompressed in {xx}\nUploaded in {xxx}",
+        opo = await ds.reply(
+            f"👍"
+        )
+        dk = await ds.rely(
+            f"☞ 💿Original Size : {hbs(org)}\n☞ 📀Compressed Size : {hbs(com)}\n☞ Compressed Percentage : {per}\n\nℹ️Mediainfo: [Ⓑ]({a1})//[Ⓐ]({a2})\n\nDownloaded📥 in {x}\nCompressed in {xx}\nUploaded📤 in {xxx}",
             link_preview=False,
         )
         os.remove(dl)
