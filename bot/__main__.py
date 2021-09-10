@@ -163,7 +163,7 @@ async def something():
                         file=f,
                         name=out,
                         progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                            progress(d, t, nnn, ttt, "uploading..")
+                            progress(d, t, nnn, ttt, "**Uᴘʟᴏᴀᴅʜɴɢ📤 Tᴏ Tᴇʟᴇɢʀᴀᴍ**")
                         ),
                     )
                 ds = await e.client.send_file(
@@ -180,9 +180,12 @@ async def something():
                 xxx = ts(int((eees - ees).seconds) * 1000)
                 a1 = await info(dl, e)
                 a2 = await info(out, e)
-                dk = await ds.reply(
-                    f"**💿Original Size : **{hbs(org)}\n**📀Compressed Size : **{hbs(com)}\n**Compressed Percentage : **{per}\n\nMediainfo: [Ⓑ]({a1})//[Ⓐ]({a2})\n\n**Downloaded📥 in {x}\nCompressed in {xx}\nUploaded in {xxx}",
-                    link_preview=False,
+                opo = await ds.reply(
+                  f"👍"
+                )
+                dk = await ds.rely(
+                f"**☞ 💿Original Size : **{hbs(org)}\n**☞ 📀Compressed Size : **{hbs(com)}\n**☞ Compressed Percentage : **{per}\n\n**☞ ℹ️Mediainfo: **[Ⓑ🅔︎]({a1})//[Ⓐ🅕︎]({a2})\n\n__Downloaded📥 in {x}\nCompressed in {xx}__\n__Uploaded📤 in {xxx}__",
+                  link_preview=False,
                 )
                 QUEUE.pop(list(QUEUE.keys())[0])
                 os.remove(dl)
