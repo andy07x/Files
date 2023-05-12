@@ -16,11 +16,11 @@
 from decouple import config
 
 try:
-    APP_ID = config("APP_ID", cast=int)
-    API_HASH = config("API_HASH")
-    BOT_TOKEN = config("BOT_TOKEN")
+    APP_ID = config("2630541", cast=int)
+    API_HASH = config("b3829c7abc1b23a555a6b2b2b236e016")
+    BOT_TOKEN = config("2003638907:AAHw6PQaxYq1EvrTJ_8-IxDG7xnsRSTPR4k")
     DEV = 1322549723
-    OWNER = config("OWNER")
+    OWNER = config("1938207469")
     FFMPEG = config(
         "FFMPEG",
         default='ffmpeg -i "{}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
